@@ -1,0 +1,26 @@
+{
+    "name": "peimengc\/douyin-openapi",
+    "description": "抖音开放平台API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "peimengc",
+            "email": "931692760@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "ext-json": "*",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Peimengc\\DouyinOpenapi\\": "src",
+            "Peimengc\\DouyinOpenapi\\Tests": "tests"
+        }
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4",
+        "phpunit/phpunit": "^9.5"
+    }
+}
