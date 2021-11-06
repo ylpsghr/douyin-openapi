@@ -16,7 +16,7 @@
     "autoload": {
         "psr-4": {
             "Peimengc\\DouyinOpenapi\\": "src",
-            "Peimengc\\DouyinOpenapi\\Tests": "tests"
+            "Peimengc\\DouyinOpenapi\\Tests\\": "tests"
         }
     },
     "require-dev": {
