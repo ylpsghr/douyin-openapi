@@ -23,7 +23,7 @@ class Api
 
     public function getHttpClient()
     {
-        return new Client($this->guzzleOptions);
+        return new Client($this->getGuzzleOptions());
     }
 
     public function getGuzzleOptions()

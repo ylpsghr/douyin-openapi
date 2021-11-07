@@ -22,5 +22,12 @@
     "require-dev": {
         "mockery/mockery": "^1.4",
         "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Peimengc\\DouyinOpenapi\\ServiceProvider"
+            ]
+        }
     }
 }
