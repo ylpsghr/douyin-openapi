@@ -87,6 +87,23 @@ class Api
     public function refreshToken($refreshToken)
     {
         $contents = $this->getHttpClient()
+            ->post('/oauth/refresh_token/', [
+                'form_params' => [
+                    'refresh_token' => $refreshToken,
+                    'client_key' => $this->key,
+                    'grant_type' => 'refresh_token'
+                ]
+            ])
+            ->getBody()
+            ->getContents();
+
+        return json_decode($contents, true);
+    }
+
+    // 刷新refresh_token
+    public function renewRefreshToken($refreshToken)
+    {
+        $contents = $this->getHttpClient()
             ->post('/oauth/renew_refresh_token/', [
                 'form_params' => [
                     'refresh_token' => $refreshToken,
